@@ -1,9 +1,20 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import copy from "copy-to-clipboard";
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
   const [thumbnailOptions, setThumbnailOptions] = useState([]);
+  const [isAdSenseLoaded, setIsAdSenseLoaded] = useState(false);
+
+  useEffect(() => {
+    // Load the AdSense script once the component is mounted
+    const script = document.createElement("script");
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6199756572722839";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    script.onload = () => setIsAdSenseLoaded(true);
+    document.body.appendChild(script);
+  }, []);
 
   const getYouTubeThumbnail = (url) => {
     let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
@@ -61,14 +72,14 @@ const Index = () => {
           onChange={(e) => setVideoURL(e.target.value)}
         />
       </div>
-        <div className="text-center mt-2">
-          <button
-            className="btn-blue"
-            onClick={() => getYouTubeThumbnail(videoURL)}
-          >
-            Download Thumbnails
-          </button>
-        </div>
+      <div className="text-center mt-2">
+        <button
+          className="btn-blue"
+          onClick={() => getYouTubeThumbnail(videoURL)}
+        >
+          Download Thumbnails
+        </button>
+      </div>
       {thumbnailOptions.length > 0 && (
         <div className="mt-8">
           <h1>Thumbnail Options</h1>
@@ -93,6 +104,18 @@ const Index = () => {
               </div>
             ))}
           </div>
+        </div>
+      )}
+      {isAdSenseLoaded && (
+        <div>
+          {/* Your AdSense ad code here */}
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-6199756572722839"
+            data-ad-slot="YOUR_AD_SLOT_NUMBER"
+            data-ad-format="auto"
+          />
         </div>
       )}
       <div className="container mx-auto px-4 py-8">
