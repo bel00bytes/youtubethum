@@ -57,7 +57,7 @@ const Index = () => {
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">
-          Youtube Thumbnail Downloader
+          YouTube Thumbnail Downloader
         </h1>
         <p className="centre-text text-gray-600">
           Download high-quality thumbnails from YouTube videos
@@ -77,7 +77,7 @@ const Index = () => {
           className="btn-blue"
           onClick={() => getYouTubeThumbnail(videoURL)}
         >
-          Download Thumbnails
+          Download YouTube Thumbnails
         </button>
       </div>
       {thumbnailOptions.length > 0 && (
@@ -119,18 +119,18 @@ const Index = () => {
         </div>
       )}
       <div className="container mx-auto px-4 py-8">
-        <h1>The Importance of Thumbnail Downloaders</h1>
+        <h1>The Importance of YouTube Thumbnail Downloaders</h1>
         <p className="centre-text text-gray-600">
-          In today's digital age, where online content is consumed at an unprecedented rate, the importance of thumbnail downloaders cannot be overstated. Thumbnail downloaders play a crucial role in content creation, marketing, and user experience across various platforms, most notably on video-sharing sites like YouTube. Here, we delve into the significance of thumbnail downloaders and why they are an indispensable tool for both creators and consumers of online content.
+          In today's digital age, where online content is consumed at an unprecedented rate, the importance of YouTube thumbnail downloaders cannot be overstated. Thumbnail downloaders play a crucial role in content creation, marketing, and user experience across various platforms, most notably on video-sharing sites like YouTube. Here, we delve into the significance of YouTube thumbnail downloaders and why they are an indispensable tool for both creators and consumers of online content.
         </p>
         <h1>Enhanced Visual Representation:</h1>
-        <p className="centre-text text-gray-600">Thumbnails serve as the first impression of a piece of content. They offer a sneak peek into the video, article, or webpage they represent. A well-crafted thumbnail can convey the essence of the content, making it more attractive and inviting to users. By allowing users to download these thumbnails, downloaders empower content creators to carefully curate the visual representation of their work.</p>
+        <p className="centre-text text-gray-600">YouTube thumbnails serve as the first impression of a piece of content. They offer a sneak peek into the video, article, or webpage they represent. A well-crafted YouTube thumbnail can convey the essence of the content, making it more attractive and inviting to users. By allowing users to download these YouTube thumbnails, downloaders empower content creators to carefully curate the visual representation of their work.</p>
         <h1>Improved Content Accessibility:</h1>
-        <p className="centre-text text-gray-600">Accessibility is a core principle of online content. Thumbnail downloaders aid in content accessibility by providing users with easy access to visuals that might otherwise be challenging to obtain. This is particularly relevant for educational content, where thumbnails can serve as reference images for presentations and reports.</p>
+        <p className="centre-text text-gray-600">Accessibility is a core principle of online content. YouTube thumbnail downloaders aid in content accessibility by providing users with easy access to visuals that might otherwise be challenging to obtain. This is particularly relevant for educational content, where YouTube thumbnails can serve as reference images for presentations and reports.</p>
       </div>
       <footer className="text-center text-gray-600 mt-8">
-        &copy; 2023 Youtube Thumbnail Downloader YB. All rights reserved.
-      </footer>
+  &copy; 2023 Youtube Thumbnail Downloader YB. All rights reserved. | YouTube Thumbnail Service, Download YouTube Thumbnails, High-Quality Thumbnails
+</footer>
     </div>
   );
 };
