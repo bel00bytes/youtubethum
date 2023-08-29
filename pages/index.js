@@ -113,7 +113,7 @@ const Index = () => {
             className="adsbygoogle"
             style={{ display: "block" }}
             data-ad-client="ca-pub-6199756572722839"
-            data-ad-slot="YOUR_AD_SLOT_NUMBER"
+            data-ad-slot="7912346351"  // Replace with your Ad Slot number
             data-ad-format="auto"
           />
         </div>
