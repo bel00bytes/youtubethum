@@ -62,6 +62,16 @@ const Index = () => {
         <p className="centre-text text-gray-600">
           Download high-quality thumbnails from YouTube videos
         </p>
+        <div>
+          {/* Your AdSense ad code here */}
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-6199756572722839"
+            data-ad-slot="7912346351"  // Replace with your Ad Slot number
+            data-ad-format="auto"
+          />
+        </div>
       </header>
       <div className="input-text">
         <input
